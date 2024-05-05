@@ -1,0 +1,23 @@
+{
+  "extends": ["standard", "standard-jsx"],
+
+  "rules": {
+    "indent": ["error", 4],
+    "semi": ["error", "always"],
+    "quotes": ["error", "double", { "allowTemplateLiterals": true, "avoidEscape": true }],
+    "space-before-function-paren": ["error", "never"],
+    "space-before-blocks": "off",
+    "comma-spacing": "off",
+    "no-trailing-spaces": "off"
+
+  },
+  "overrides": [
+    {
+      "files": ["**/*.test.js"],
+      "rules": {
+        "no-undef": "off",
+        "semi": "off"
+      }
+    }
+  ]
+}
